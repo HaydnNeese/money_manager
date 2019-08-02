@@ -1,0 +1,11 @@
+.height {
+  height: 240px;
+}
+
+.color {
+  background-color: lightgrey;
+}
+
+.border {
+  border: lightgray 2px groove;
+}
