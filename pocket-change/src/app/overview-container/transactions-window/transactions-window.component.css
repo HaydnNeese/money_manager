@@ -9,3 +9,7 @@
 .border {
   border: lightgray 2px groove;
 }
+
+.margin {
+  margin: 5px;
+}

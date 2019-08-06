@@ -9,3 +9,7 @@
 .border {
   border: lightgray 2px groove;
 }
+
+.alert-margin {
+  margin: 10px;
+}
