@@ -1,0 +1,8 @@
+.control-panel-margin {
+  width: 85%;
+  margin: 1% auto;
+}
+.cp-styling {
+  background-color: rgb(241, 243, 243);
+  border: rgb(241, 243, 243, 0.2) 3px groove;
+}

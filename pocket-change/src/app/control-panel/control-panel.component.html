@@ -1,0 +1,50 @@
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="transactionName">Transaction Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="transactionName"
+        placeholder="Enter name here..."
+      />
+    </div>
+    <div class="form-group col-md-4">
+      <label for="transactionAmount">Transaction Amount</label>
+      <input
+        type="number"
+        class="form-control"
+        id="transactionAmount"
+        placeholder="Enter amount here..."
+      />
+    </div>
+    <div class="form-group col-md-4">
+      <label for="transactionType">Transaction Category</label>
+      <input
+        type="search"
+        class="form-control"
+        id="transactionType"
+        placeholder="Groceries, Car Insurance, Dining, Movies...etc"
+      />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="transactionDate">Transaction Date</label>
+      <input type="date" class="form-control" id="transactionDate" />
+    </div>
+  </div>
+  <div class="row">
+      <div class="form-group col-md-6">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label for="useCurrentTime">Use current time</label>
+          </div>
+        </div>
+    <div class="form-group col-md-6 d-flex justify-content-end">
+      <button class="btn btn-success" type="submit">Add Transaction</button>
+    </div>
+  </div>
+</form>
+<!-- set some typescript to say that if you check the 'use current time' box
+then the transaction date input field should be disabled -->

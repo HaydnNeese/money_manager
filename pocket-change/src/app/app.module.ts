@@ -1,28 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { TransactionsWindowComponent } from './overview-container/transactions-window/transactions-window.component';
-import { BudgetWindowComponent } from './overview-container/budget-window/budget-window.component';
-import { NotificationWindowComponent } from './overview-container/notification-window/notification-window.component';
-import { CategoryWindowComponent } from './overview-container/category-window/category-window.component';
-import { OverviewContainerComponent } from './overview-container/overview-container.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ControlPanelComponent } from './control-panel/control-panel.component';
+import { BudgetPanelComponent } from './budget-panel/budget-panel.component';
+import { TransactionPanelComponent } from './transaction-panel/transaction-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    TransactionsWindowComponent,
-    BudgetWindowComponent,
-    NotificationWindowComponent,
-    CategoryWindowComponent,
-    OverviewContainerComponent
+    NavbarComponent,
+    ControlPanelComponent,
+    BudgetPanelComponent,
+    TransactionPanelComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
