@@ -1,8 +1,20 @@
-.control-panel-margin {
-  width: 85%;
-  margin: 1% auto;
-}
 .cp-styling {
   background-color: rgb(241, 243, 243);
   border: rgb(241, 243, 243, 0.2) 3px groove;
+}
+
+.bp-styling {
+  background-color: rgb(241, 243, 243);
+  border: rgb(241, 243, 243, 0.2) 3px groove;
+  padding: 20px;
+}
+
+.tp-styling {
+  background-color: rgb(241, 243, 243);
+  border: rgb(241, 243, 243, 0.2) 3px groove;
+  padding: 20px;
+}
+
+.header-color {
+  color: green;
 }
