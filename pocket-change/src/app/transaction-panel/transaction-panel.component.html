@@ -6,12 +6,13 @@
       <th scope="col">Category</th>
       <th scope="col">Date</th>
     </thead>
-    <tr class="table-success">
-      <td>Paycheck-NL</td>
-      <td>$1523.85</td>
-      <td>Income</td>
-      <td>08/08/2019</td>
+    <tr *ngFor="let element of rows">
+      <td>{{element.name}}</td>
+      <td>{{element.amount}}</td>
+      <td>{{element.category}}</td>
+      <td>{{element.date}}</td>
     </tr>
+<!--
     <tr class="table-danger">
         <td>Walmart</td>
         <td>$68.89</td>
@@ -29,6 +30,6 @@
         <td>$35.86</td>
         <td>Dining</td>
         <td>08/09/2019</td>
-    </tr>
+    </tr> -->
   </table>
 </div>
