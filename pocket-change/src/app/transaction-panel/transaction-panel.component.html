@@ -6,7 +6,8 @@
       <th scope="col">Category</th>
       <th scope="col">Date</th>
     </thead>
-    <tr *ngFor="let element of rows">
+    <!-- research why the error is going on, but this does work for the time being -->
+    <tr *ngFor="let element of rows | slice:0:4">
       <td>{{element.name}}</td>
       <td>{{element.amount}}</td>
       <td>{{element.category}}</td>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ɵConsole } from '@angular/core';
 
 @Component({
   selector: 'app-transaction-panel',
@@ -14,21 +14,14 @@ export class TransactionPanelComponent implements OnInit {
     date: string;
   };
 
-  rows: [{}] = [
-    {
-      name: 'Test',
-      amount: 10,
-      category: 'Testing',
-      date: '11/22/4444'
-    },
-  ];
+  rows = [];
 
 
   constructor() {}
 
   ngOnInit() {
-    this.rows.push(this.newRow);
-    console.log(this.rows);
+    console.log(this.newRow);
+    this.rows = this.newRow;
   }
   // isn't working yet. It looks like lines 10-15 are bringing in the data as expected, but line 30 pushes in the newRow and rewrites the
   // index each time a new transaction is created instead of adding the object to the next index in the rows array

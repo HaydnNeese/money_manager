@@ -43,13 +43,6 @@ export class ControlPanelComponent implements OnInit {
       category: this.newCategory,
       date: this.newDate
     });
-    console.log(
-      'new transaction: ' +
-        this.newName +
-        this.newAmount +
-        this.newCategory +
-        this.newDate
-    );
   }
 
   constructor() {}
