@@ -3,42 +3,47 @@
     <div class="form-group col-md-4">
       <label for="transactionName">Transaction Name</label>
       <input
-        (input)="onUpdateNewTransactionName($event)"
         type="text"
         class="form-control"
         id="transactionName"
         placeholder="Enter name here..."
+        [(ngModel)]="transaction.name"
+        [ngModelOptions]="{standalone: true}"
       />
     </div>
     <div class="form-group col-md-4">
       <label for="transactionAmount">Transaction Amount</label>
       <input
-      (input)="onUpdateNewTransactionAmount($event)"
         type="number"
         class="form-control"
         id="transactionAmount"
         placeholder="Enter amount here..."
+        [(ngModel)]="transaction.amount"
+        [ngModelOptions]="{standalone: true}"
       />
     </div>
     <div class="form-group col-md-4">
       <label for="transactionType">Transaction Category</label>
       <input
-      (input)="onUpdateNewTransactionCategory($event)"
         type="search"
         class="form-control"
         id="transactionType"
         placeholder="Groceries, Car Insurance, Dining, Movies...etc"
-      />
+        [(ngModel)]="transaction.category"
+        [ngModelOptions]="{standalone: true}"
+        />
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-12">
       <label for="transactionDate">Transaction Date</label>
       <input
-      (input)="onUpdateNewTransactionDate($event)"
       type="date"
       class="form-control"
-      id="transactionDate" />
+      id="transactionDate"
+      [(ngModel)]="transaction.date"
+      [ngModelOptions]="{standalone: true}"
+      />
     </div>
   </div>
   <div class="row">

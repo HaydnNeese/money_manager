@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BudgetPanelComponent } from './budget-panel.component';
+import { NgxChartComponent } from './ngx-chart.component';
 
-describe('BudgetPanelComponent', () => {
-  let component: BudgetPanelComponent;
-  let fixture: ComponentFixture<BudgetPanelComponent>;
+describe('NgxChartComponent', () => {
+  let component: NgxChartComponent;
+  let fixture: ComponentFixture<NgxChartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BudgetPanelComponent ]
+      declarations: [ NgxChartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BudgetPanelComponent);
+    fixture = TestBed.createComponent(NgxChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
