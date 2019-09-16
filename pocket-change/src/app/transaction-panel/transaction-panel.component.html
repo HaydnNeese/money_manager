@@ -7,7 +7,7 @@
       <th scope="col">Date</th>
     </thead>
     <!-- research why the error is going on, but this does work for the time being -->
-    <tr *ngFor="let row of rowsArray | slice: 0:4">
+    <tr *ngFor="let row of rowsArray | slice: 0:8">
       <td>{{ row.name }}</td>
       <td>${{ row.amount }}</td>
       <td>{{ row.category }}</td>

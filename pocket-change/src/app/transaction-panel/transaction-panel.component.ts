@@ -7,7 +7,7 @@ import { Component, OnInit, Input, ɵConsole } from '@angular/core';
 })
 export class TransactionPanelComponent implements OnInit {
   // set up a property to receive the data from app.ts that was bound to newRow property
-  @Input() rows: {
+  @Input() recentTransaction: {
     name: string,
     amount: number,
     category: string,
@@ -16,11 +16,9 @@ export class TransactionPanelComponent implements OnInit {
 
   rowsArray = [];
 
-
   constructor() {}
 
   ngOnInit() {
-    this.rowsArray = this.rows;
-    console.log(this.rows);
+    this.rowsArray = this.recentTransaction;
   }
 }

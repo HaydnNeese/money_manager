@@ -2,18 +2,22 @@
 <div class="container-fluid">
   <div class="row cp-styling">
     <div class="col-md-12">
-      <app-control-panel (newTransactionCreated)="onTransactionCreated($event)"></app-control-panel>
+      <app-control-panel
+      (newTransactionCreated)="onTransactionCreated($event)"
+      ></app-control-panel>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 bp-styling">
-      <app-ngx-chart></app-ngx-chart>
+      <app-ngx-chart
+      [newData] = "graphData"
+      ></app-ngx-chart>
     </div>
     <div class="col-md-6 tp-styling">
       <h1 class="d-flex justify-content-center header-color">Recent Transactions</h1>
       <!-- bind the property newRow (inside of transaction-panel.ts) to the rowElement property (inside of app.ts) -->
       <app-transaction-panel
-      [rows] = "rowElements"
+      [recentTransaction] = "rowElements"
       >
       </app-transaction-panel>
     </div>
